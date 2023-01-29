@@ -22,9 +22,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'bbison2002@gmail.com',
             'password' => bcrypt('Fuka_Wata123'),
+            'role_id' => '1',
         ]);
         role::create(['name'=> 'Administrator']);
-        role::create(['name'=> 'kurikulum']);
+        role::create(['name'=> 'Kurikulum']);
         role::create(['name'=> 'Kesiswaan']);
         role::create(['name'=> 'Sarpras']);
         role::create(['name'=> 'Humas']);

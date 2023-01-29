@@ -45,5 +45,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo(role::class);
     }
+    public function folderOrFole()
+    {
+        return $this->hasMany(folderOrFole::class);
+    }
 
 }

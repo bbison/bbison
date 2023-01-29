@@ -20,8 +20,10 @@ return new class extends Migration
             $table->string("perent");
             $table->string("name");
             $table->string("type");
+            $table->text("path")->nullable();
+            $table->text("ekstensi")->nullable();
             $table->string("size")->default('0 kb');
-            $table->string("logo")->default('defaultFolder.jpg');
+            $table->string("logo")->default('https://www.seekpng.com/png/detail/12-127264_yellow-folder-png-clipart-transparent-download-open-folder.png');
             $table->timestamps();
         });
     }

@@ -34,8 +34,14 @@
     <div class="d-flex justify-content-center">
         <div class="col-6 d-flex justify-content-center align-middle" style="height: 300px" >
             <form action="/login" method="post" class="col-8 bg-light p-4 ">
+            @if (session('pesan'))
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                {{ session('pesan') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            @endif
                 @csrf
-                <input class="form-control mt-2" type="text" placeholder="email" name="email">
+                <input class="form-control mt-2" type="email" placeholder="email" name="email" >
                 <input class="form-control mt-2" type="password" placeholder="password" name="password">
                 <input class="form-control mt-2 mb-2" type="submit">
             </form>
