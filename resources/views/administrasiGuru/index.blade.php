@@ -36,9 +36,9 @@
             @endif
             {{-- Folder --}}
             <div class="row mt-3">
-                <ul class="d-flex flex-wrap" style="list-style-type: none">
+                <ul class="d-flex flex-wrap flex-grow-1" style="list-style-type: none">
                     @foreach ($folders as $folder)
-                        <li class="col-3 mb-3">
+                        <li class="mb-3" id="card">
                             <div href="" class="card -1" height='300px'>
                                 @if (
                                     $folder->logo !=
@@ -157,7 +157,7 @@
             <div class="row mt-3">
                 <ul class="row" style="list-style-type: none">
                     @foreach ($files as $folder)
-                        <li class="col-3 mb-3">
+                        <li class="mb-3" id="card">
                             <div href="" class="card p-1">
                                 <img src="{{ $folder->logo }}" class="card__image" alt="" />
                                 <div class="card__overlay">

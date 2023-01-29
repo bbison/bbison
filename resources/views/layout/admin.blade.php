@@ -5,6 +5,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AdminLTE 3 | Dashboard</title>
+    <style>
+         #card {
+    width:25%;
+    margin: 1%
+    
+  }
+
+
+     @media only screen and (max-width: 900px) {
+  #card {
+    width:35%;
+    margin: 1%
+  }
+}
+     @media only screen and (max-width: 600px) {
+  #card {
+    width:44%;
+    margin: 1%;
+    font-size:0.9rem
+  }
+  .card__title{
+    margin-top: 10px
+  }
+}
+
+    </style>
+
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
